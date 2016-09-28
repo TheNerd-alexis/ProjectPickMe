@@ -1,0 +1,387 @@
+@CHARSET "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body {
+	background-color: #3399FF;
+}
+
+#container {
+	max-width: 620px;
+	margin: 0 10px;
+	padding: 10px;
+	padding-top: 100px;
+	display: table;
+}
+
+#leftDiv {
+	display: table-cell;
+	horizontal-alignment: left;
+}
+
+#content {
+	display: table-cell;
+	vertical-alignment: middle;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td,
+	form, fieldset, legend, input, textarea, button, select {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nanum Gothic', serif;
+	font-size: 15px;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+img, fieldset {
+	border: 0
+}
+
+.table_content {
+	width: 430px;
+	margin: 0 auto;
+}
+
+.table_row {
+	*position: relative;
+	padding: 11px 11px 11px 13px;
+	border-top: solid 1px #f0f0f0;
+	background: #fff;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	display: table;
+	width: 100%;
+}
+
+.table_row .int {
+	position: relative;
+	*position: absolute;
+	float:left;
+	*top: 0;
+	*left: 0;
+	z-index: 10;
+	padding: 6px 0;
+	width: 100%;
+	max-width: 400px;
+	border: none;
+	background: #fff;
+	font-size: 15px;
+	font-weight: bold; none;
+	apperance: none;
+	-webkit-apperance: none;
+	margin: 5px 0 10px 0;
+}
+
+.table_row .lbl {
+	display: table-cell;
+	horizontal-alignment: left;
+	float: left;
+	z-index: 10;
+	padding: 6px 0;
+	width: 18%;
+	border: none;
+	background: 0 0;
+	font-size: 15px;
+	font-weight: bold; none;
+	apperance: none;
+	-webkit-apperance: none;
+	color: gray;
+}
+
+.table_row .int2 {
+	display: table-cell;
+	horizontal-alignment: center;
+	z-index: 10;
+	padding: 6px 0;
+	width: 80%;
+	border: none;
+	background: 0 0;
+	font-size: 15px;
+	font-weight: bold; none;
+	apperance: none;
+	-webkit-apperance: none
+}
+
+.table_row .date {
+	display: table-cell;
+	horizontal-alignment: center;
+	z-index: 10;
+	padding: 6px 0;
+	width: 35%;
+	background: 0 0;
+	font-size: 15px;
+	font-weight: bold; none;
+	apperance: none;
+	-webkit-apperance: none;
+	text-alignment: right;
+}
+
+.table_row:first-child {
+	border-top: none
+}
+
+.error {
+	margin: 3px 0 3px 1px;
+	font-size: 13px;
+	font-weight: bold; none;
+	color: #f00;
+}
+
+.gm {
+	color: #0000a0;
+}
+
+.e_info {
+	color: #969696
+}
+
+.row_group {
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 160px;
+}
+
+li {
+	border: 1px solid #fff;
+	background: #0080ff;
+	margin-top: 10px;
+}
+
+li a, .dropbtn {
+	display: inline-block;
+	color: white;
+	font-weight: bold; none;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li:hover, .dropdown:hover .dropbtn {
+	background-color: red;
+}
+
+li.dropdown {
+	width: 98%;
+}
+
+.dropdown-content {
+	display: none;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+textarea {
+	resize: none;
+	border-style: none;
+}
+
+.filebox input[type="file"] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.filebox label {
+	display: inline-block;
+	padding: .5em .75em;
+	color: black;
+	font-size: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #fdfdfd;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radius: .25em;
+}
+
+/* named upload */
+.filebox .upload-name {
+	display: inline-block;
+	width: 57%;
+	max-width: 70%;
+	padding: .5em .75em;
+	font-size: inherit;
+	font-family: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #f5f5f5;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radius: .25em;
+	-webkit-appearance: none; /* 네이티브 외형 감추기 */
+	-moz-appearance: none;
+	appearance: none;
+	padding: .5em .75em;
+}
+
+/* imaged preview */
+.filebox .upload-display {
+	margin-bottom: 5px;
+}
+
+@media ( min-width : 768px) {
+	.filebox .upload-display {
+		display: inline-block;
+		margin-right: 5px;
+		margin-bottom: 0;
+	}
+}
+
+.filebox .upload-thumb-wrap {
+	display: inline-block;
+	width: 54px;
+	padding: 2px;
+	vertical-align: middle;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.filebox .upload-display img {
+	display: block;
+	max-width: 100%;
+	width: 100% \9;
+	height: auto;
+}
+
+.filebox.bs3-primary label {
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+}
+
+.table_row input[type="button"] {
+	position:relative;
+	float:left;
+	display: inline-block;
+	padding: .5em .5em;
+	color: black;
+	font-size: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #fdfdfd;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radius: .25em;
+	margin-bottom: 10px;
+}
+
+table input[type="text"] {
+	display:table-cell;
+	horizontal-alignment:middle;
+	float:left;
+	height: 100%;
+	padding: .5em .75em;
+	font-size: inherit;
+	font-family: inherit;
+	vertical-align: middle;
+	background-color: transparent;
+	border: none;
+	appearance: none;
+	min-width:10px;
+}
+
+th input[type="text"] {
+	background-color: transparent;
+	float:left;
+	width:75%;
+	border:none;
+	color: white;
+}
+
+table {
+    border-collapse: collapse;
+    display:table;
+    max-width:100%;
+    overflow-x:auto;
+}
+
+th{
+	background-color: #3399FF;
+}
+
+th a{
+	vertical-alignment: middle;
+	color:white;
+	text-decoration:none;
+}
+
+td a{
+	vertical-alignment: middle;
+	color:black;
+	text-decoration:none;
+}
+
+td, th {
+    border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	text-align:center; 
+    vertical-align:middle;
+    padding: 0;
+    margin: 10px;
+}
+
+th:last-child{
+    border: none;
+    background-color: 0 0;
+}
+
+td:first-child, th:first-child{
+	border:none;
+	background: transparent;
+}
+
+.btn_insertCell {
+	display: block;
+	height: 61px;
+	*width: 460px;
+}
+
+.btn_insertCell input {
+	width: 200px;
+	border: 1px solid #ffffff;
+	height: 61px;
+	background: #0080ff;
+	background-size: 108px auto;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold; none;
+	color: white;
+	padding: 0;
+	margin: 0;
+}

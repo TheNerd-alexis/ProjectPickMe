@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+html, body {
+	height: 100%;
+	overflow: hidden
+}
+
+body {
+	background-color: #3399FF;
+	background-image: url("https://googledrive.com/host/0B-CPAakLRHgLVVBPZzdpZDMwa0E/logo.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: calc(100vw/3);
+	background-position: right bottom;
+}
+
+#sortable1, #sortable2, #sortable3, #sortable4, #sortable5, #sortable6 {
+	list-style-type: none;
+	position: relative;
+	margin:auto;
+	min-height:157px;
+}
+
+#sortable1, #sortable3, #sortable5 {
+	/*border:10px solid orange;*/
+	left:calc(100vw/18);
+	top:calc(100vw/36);
+}
+
+#sortable2, #sortable4, #sortable6 {
+	/*border:10px solid red;*/
+	margin-bottom:calc(100vw/-18);
+}
+#sortable1 ul, #sortable2 ul, #sortable3 ul, #sortable4 ul, #sortable5 ul, #sortable6 ul {
+	display:inline;
+	padding:0;
+	margin:0;
+}
+
+#sortable1 li, #sortable2 li, #sortable3 li, #sortable4 li, #sortable5 li, #sortable6 li {
+	display:inline;
+	padding: 0.5%;
+	position: relative;
+	margin: 0;
+}
+
+.ui-widget-header p, .ui-widget-content p {
+	margin: 0;
+}
+
+.center {
+	margin: auto;
+	width: 95%;
+	height: 95%;
+	border: 2px solid #ccc;
+	border: 3px solid #73AD21;
+	padding: 10px;
+}

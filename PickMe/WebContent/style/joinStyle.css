@@ -1,0 +1,171 @@
+@CHARSET "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body{
+	background-color: #3399FF;
+}
+
+#container {
+	max-width: 900px;
+	min-width: 460px;
+	margin: 0 auto
+}
+
+.error {
+	margin: 3px 0 3px 1px;
+	font-size: 12px;
+	color: #f00
+}
+
+.gm {
+	color: #2eaa08
+}
+
+._input td {
+	text-align: center;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td,
+	form, fieldset, legend, input, textarea, button, select {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nanum Gothic', serif;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+body, input, textarea, select, button, table {
+	font-size: 12px;
+}
+
+img, fieldset {
+	border: 0
+}
+
+.join_content {
+	margin: 0 auto
+}
+
+/* 해상도에 따른 css */
+@media only screen and (min-width:1024px) {
+	#container {
+		width: 900px;
+		margin: 0 auto !important
+	}
+	.join_content {
+		width: 460px;
+		margin: 0 auto
+	}
+}
+
+@media screen and (min-width:460px) {
+	#container {
+		margin: 0 10px
+	}
+	.join_content {
+		width: 460px;
+		margin: 0 auto
+	}
+}
+
+.join_form .lbl {
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 0;
+	z-index: 9;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #999
+}
+
+.join_row .int {
+	position: relative;
+	*position: absolute;
+	*top: 0;
+	*left: 0;
+	z-index: 10;
+	padding: 6px 0;
+	width: 100%;
+	height: 15px;
+	border: none;
+	background: #fff;
+	font-size: 15px;
+	font-weight: bold; none;
+	apperance: none;
+	-webkit-apperance: none
+}
+
+.join_row {
+	*position: relative;
+	padding: 11px 11px 11px 13px;
+	border-top: solid 1px #f0f0f0;
+	background: #fff;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box
+}
+
+.join_row:first-child {
+	border-top: none
+}
+
+.error {
+	margin: 3px 0 3px 1px;
+	font-size: 13px;
+	font-weight: bold; none;
+	color: #f00;
+}
+
+.gm {
+	color: #0000a0;
+}
+
+.e_info {
+	color: #969696
+}
+
+.btn_join {
+	display: block;
+	height: 61px;
+	*width: 460px;
+}
+
+.btn_join input {
+	width: 32%;
+	border: 1px solid #ffffff;
+	height: 61px;
+	background: #0080ff;
+	background-size: 108px auto;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold; none;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+
+.btn_c {
+	display: inline-block;
+	width: 64px;
+	height: 31px;
+	border: 1px solid #dcdcdc;
+	background: #fff;
+	font-size: 13px;
+	text-align: center;
+	line-height: 33px;
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.row_group{
+	border: solid 1px #dadada;
+	background: #fff;
+	margin-bottom: 10px;
+	zoom: 1
+}
